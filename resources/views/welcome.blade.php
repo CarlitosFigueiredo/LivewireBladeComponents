@@ -1,6 +1,19 @@
 <x-layouts.app>
     <div class="grid gap-8">
         <div class="grid gap-4">
+            <h2 class="text-5xl font-bold">Counter</h2>
+
+            <x-separator />
+
+            <div x-data="{ count: 0}" class="grid gap-4">
+
+                <x-input.counter x-model="count" />
+
+                <div>The current count is: <span x-text="count"></span> </div>
+            </div>
+        </div>
+
+        <div class="grid gap-4">
             <h2 class="text-5xl font-bold">Money Input</h2>
 
             <x-separator />
