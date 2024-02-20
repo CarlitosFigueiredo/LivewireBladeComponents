@@ -1,3 +1,7 @@
+@props([
+    'heading' => 'Some default heading...',
+])
+
 <div class="grid gap-2 p-4 rounded-xl bg-gray-100 max-w-sm">
 
     <div class="pb-2">
@@ -9,15 +13,6 @@
     </div>
 
     <div class="text-sm text-gray-700">
-       {{ $body }}
-    </div>
-
-    <div class="pt-8 pb-2">
-        <x-separator class="!bg-gray-200" />
-    </div>
-
-    <div {{ $footer->attributes->class(['flex gap-2', 'flex-col' => $footer->attributes->has('col')]) }}>
-
-        {{ $footer }}
+       {{ $slot }}
     </div>
 </div>
