@@ -1,5 +1,19 @@
 <x-layouts.app>
     <div class="grid gap-8">
+
+        <div class="grid gap-4">
+            <h2 class="text-5xl font-bold">Button</h2>
+
+            <x-separator />
+
+            <div>
+                <x-button icon="download">
+
+                    Export
+                </x-button>
+            </div>
+        </div>
+
         <div class="grid gap-4">
             <h2 class="text-5xl font-bold">Counter</h2>
 
