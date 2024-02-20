@@ -27,7 +27,7 @@
         <div class="flex gap-4">
 
             {{-- Card --}}
-            <x-card heading="Skateboards">
+            <x-card heading="Skateboards" slim>
                 <p>Shop our line of custom-made skate decks. Each deck is hand-crafted form lumber grown in Loompa land.</p>
 
                 <x-card.footer>

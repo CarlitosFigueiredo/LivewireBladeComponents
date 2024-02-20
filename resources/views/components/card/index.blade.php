@@ -1,8 +1,15 @@
 @props([
     'heading' => 'Some default heading...',
+    'slim' => 'booya',
 ])
 
-<div class="grid gap-2 p-4 rounded-xl bg-gray-100 max-w-sm">
+<div
+    {{ $attributes->class([
+        'grid gap-2 rounded-xl bg-gray-100 max-w-sm',
+        'p-4' => $slim,
+        'p-8' => ! $slim,
+    ]) }}
+>
 
     <div class="pb-2">
         @if ($heading instanceof \illuminate\view\componentSlot)
