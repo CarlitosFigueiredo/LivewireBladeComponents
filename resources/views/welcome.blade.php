@@ -1,41 +1,23 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<x-layouts.app>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <div class="grid gap-4">
 
-    <title>Laravel</title>
+        <h2 class="text-5xl font-bold">Sepparator</h2>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+        <x-separator />
 
-    @vite('resources/css/app.css')
-</head>
+        <div class="flex gap-4">
 
-<body>
-    <div class="max-w-2xl m-auto py-16">
-        <div class="grid gap-4">
+            <div>Home</div>
 
-            <h2 class="text-5xl font-bold">Sepparator</h2>
+            <x-separator vertical />
 
-            <x-separator />
+            <div>About</div>
 
-            <div class="flex gap-4">
+            <x-separator vertical />
 
-                <div>Home</div>
-
-                <x-separator vertical />
-
-                <div>About</div>
-
-                <x-separator vertical />
-
-                <div>Team</div>
-            </div>
+            <div>Team</div>
         </div>
     </div>
-</body>
 
-</html>
+</x-layouts.app>
