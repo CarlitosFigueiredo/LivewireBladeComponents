@@ -10,9 +10,8 @@
         'p-8' => ! $slim,
     ]) }}
 >
-
     <div class="pb-2">
-        @if ($heading instanceof \illuminate\view\componentSlot)
+        @if ($heading instanceof \Illuminate\View\ComponentSlot)
             {{ $heading }}
         @else
             <h2 class="text-2xl font-bold">{{ $heading }}</h2>
@@ -20,6 +19,6 @@
     </div>
 
     <div class="text-sm text-gray-700">
-       {{ $slot }}
+        {{ $slot }}
     </div>
 </div>
